@@ -1,0 +1,9 @@
+
+*.bak
+*.orig
+
+.vs/
+bin/
+obj/
+
+

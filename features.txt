@@ -1,0 +1,137 @@
+
+This is a list of features to add and/or things that are missing in the scripting language:
+
+================ TO REFACTOR ================
+
+[] Operators
+[] Conversions
+	[] allow user defined conversions
+[] Should we only support int, float and bool built in types and convert other types to this ones for implementation simplicity?
+[] Move full-evaluation tests from Parse_and_Evaluate-test.cpp to their own .cpp file.
+
+================ TO IMPLEMENT ================
+
+[] script macros (to facilitate error reporting)
+	[] line number
+
+[] statement types
+	[x] if
+	[x] else if
+	[x] else
+	[] return
+	
+	[] loops
+		[x] while
+		[x] for
+		[] break
+		[] continue
+		
+
+[] variable types
+	[x] int
+	[x] float
+	[x] bool
+	[x] char
+	[] are these worth it? I don't think so..
+		[] unsigned int
+		[] long
+		[] unsigned long
+		[] float values have ending 'f' (i.e. 1.2f) ???
+		[] double
+	
+[] be able to define functions inside the script
+[x] be able to instantiate user defined types in an script (i.e. bind types)
+
+================ COMPLETED ================
+
+[x] bind C++ variables
+	[x] global variables
+	[x] member variables
+	
+[x] bind C++ functions
+	[x] global functions
+	[x] member functions
+	[x] overloaded global functions
+	[x] overloaded member functions
+	[x] std::function
+
+[x] comments
+	[x] // 	single line comment
+	[x] /**/ multiline comment
+
+	[x] string
+	[x] vector
+		[x] can be constructed as "var v = [1, 2, true, 2.0]", for example
+		[x] member functions
+			[x] operator[]
+				[x] be able to bind it as a member function
+				[x] bind it for vector and strings
+			[x] size
+			[x] push back
+			[x] pop back
+			[x] empty
+			[x] resize
+			[x] reserve
+			[x] capacity
+	
+[x] operators
+	[x] unary
+		[x] ! negation
+		[x] ~ bitwise inversion?
+		[x] ++ (pre & post increment)
+		[x] -- (pre & post decrement)
+	
+	[x] logical
+		[x] ||
+		[x] &&
+		
+	[x] binary
+		[x] +
+		[x] -
+		[x] *
+		[x] /
+		[x] %
+		
+		[x] +=
+		[x] -=
+		[x] *=
+		[x] /=
+		[x] %=
+		
+		[x] comparison
+			[x] <
+			[x] >
+			[x] >=
+			[x] <=
+			[x] !=
+			[x] ==
+		
+		[x] bitwise
+			[x] <<
+			[x] >>
+			[x] <<=
+			[x] >>=
+			[x] |
+			[x] &
+			[x] ^
+			[x] |=
+			[x] &=
+			[x] ^=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
